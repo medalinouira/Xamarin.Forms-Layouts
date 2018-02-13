@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Xamarin.Forms_Layouts.Views.GridView" 
+             Title="Grid"
+             ControlTemplate="{StaticResource SweetTemplate}">
+
+    <ContentPage.Content>
+
+        <StackLayout>
+
+            <Grid Margin="5,5,5,5">
+
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="100"/>
+                    <RowDefinition Height="100*"/>
+                    <RowDefinition Height="50*"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="100"/>
+                    <ColumnDefinition Width="100"/>
+                    <ColumnDefinition Width="30*"/>
+                    <ColumnDefinition Width="Auto"/>
+                </Grid.ColumnDefinitions>
+
+                <Grid Grid.Row="0"
+                      Grid.Column="0"
+                      BackgroundColor="#23282d">
+
+                    <Label Text="Grid.Row=0 / Grid.Column=0"                          
+                           Style="{StaticResource LbStyle}"/>
+                </Grid>
+
+                <Grid Grid.Row="0"
+                      Grid.Column="1"
+                      BackgroundColor="#7E1335">
+
+                    <Label Text="Grid.Row=0 / Grid.Column=1"                          
+                           Style="{StaticResource LbStyle}"/>
+                </Grid>
+
+                <Grid Grid.Row="0"
+                      Grid.Column="2"
+                      BackgroundColor="#23282d">
+
+                    <Label Text="Grid.Row=0 / Grid.Column=2"                          
+                           Style="{StaticResource LbStyle}"/>
+                </Grid>
+
+                <Grid Grid.Row="1"
+                      Grid.Column="1"
+                      Grid.ColumnSpan="2"
+                      BackgroundColor="#23282d">
+
+                    <Label Text="Grid.Row=1 / Grid.Column=1 / Grid.ColumnSpan=2"                          
+                           Style="{StaticResource LbStyle}"/>
+                </Grid>
+
+                <Grid Grid.Row="2"
+                      Grid.RowSpan="2"
+                      Grid.Column="0"
+                      HeightRequest="100"
+                      BackgroundColor="#7E1335">
+
+                    <Label Text="Grid.Row=2 / Grid.RowSpan=2 / Grid.Column=0"                                                       
+                           Style="{StaticResource LbStyle}"/>
+                </Grid>
+
+            </Grid>
+
+        </StackLayout>
+
+    </ContentPage.Content>
+    
+</ContentPage>

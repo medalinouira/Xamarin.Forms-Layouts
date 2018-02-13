@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             Title="StackLayout"
+             x:Class="Xamarin.Forms_Layouts.Views.StackLayoutView"
+             ControlTemplate="{StaticResource SweetTemplate}">
+
+    <ContentPage.Content>
+
+        <StackLayout>
+
+            <StackLayout>
+
+                <Label Text="Horizontal StackLayout"
+                       Style="{StaticResource LbGrayStyle}"/>
+
+                <StackLayout Orientation="Horizontal">
+
+                    <BoxView HeightRequest="100"
+                             HorizontalOptions="FillAndExpand"
+                             BackgroundColor="#23282d">
+                    </BoxView>
+
+                    <BoxView HeightRequest="100"
+                             HorizontalOptions="FillAndExpand"
+                             BackgroundColor="#7E1335">
+                    </BoxView>
+
+                    <BoxView HeightRequest="100"
+                             HorizontalOptions="FillAndExpand"
+                             BackgroundColor="#23282d">
+                    </BoxView>
+
+                </StackLayout>
+
+                <Label Text="Vertical StackLayout"
+                       Style="{StaticResource LbGrayStyle}"/>
+
+                <StackLayout Orientation="Vertical">
+
+                    <BoxView HeightRequest="100"
+                             HorizontalOptions="FillAndExpand"
+                             BackgroundColor="#23282d">
+                    </BoxView>
+
+                    <BoxView HeightRequest="100"
+                             HorizontalOptions="FillAndExpand"
+                             BackgroundColor="#7E1335">
+                    </BoxView>
+
+                </StackLayout>
+
+            </StackLayout>
+
+        </StackLayout>
+
+    </ContentPage.Content>
+    
+</ContentPage>

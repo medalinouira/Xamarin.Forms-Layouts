@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             Title="AbsoluteLayout"
+             x:Class="Xamarin.Forms_Layouts.Views.AbsoluteLayoutView"             
+             ControlTemplate="{StaticResource SweetTemplate}">
+
+    <ContentPage.Content>
+
+        <StackLayout>
+
+            <Label Text="AbsoluteLayout"
+                   Style="{StaticResource LbGrayStyle}"/>
+
+            <AbsoluteLayout VerticalOptions="FillAndExpand">
+
+                <Grid BackgroundColor="#23282d" 
+                      AbsoluteLayout.LayoutBounds="10, 10, .3, .3"                
+                      AbsoluteLayout.LayoutFlags="SizeProportional">
+
+                    <Label Text="SizeProportional 10, 10, .3, .3"                          
+                           Style="{StaticResource LbStyle}"/>
+
+                </Grid>
+
+                <Grid BackgroundColor="#7E1335"  
+                      AbsoluteLayout.LayoutBounds=".8, .9, 100, 100"                
+                      AbsoluteLayout.LayoutFlags="XProportional">
+
+                    <Label Text="XProportional .8, .9, 100, 100"                          
+                           Style="{StaticResource LbStyle}"/>
+
+                </Grid>
+
+                <Grid BackgroundColor="#23282d"  
+                      AbsoluteLayout.LayoutBounds=".8, .9, 100, 100"                
+                      AbsoluteLayout.LayoutFlags="YProportional">
+
+                    <Label Text="YProportional .8, .9, 100, 100"                          
+                           Style="{StaticResource LbStyle}"/>
+
+                </Grid>
+
+                <Grid BackgroundColor="#23282d"  
+                      AbsoluteLayout.LayoutBounds=".8, .5, 100, 100"                
+                      AbsoluteLayout.LayoutFlags="PositionProportional">
+
+                    <Label Text="PositionProportional .8, .5, 200, 100"                          
+                           Style="{StaticResource LbStyle}"/>
+
+                </Grid>
+
+                <Grid BackgroundColor="#7E1335"  
+                      AbsoluteLayout.LayoutBounds="0, 200, .3, 100"                
+                      AbsoluteLayout.LayoutFlags="WidthProportional">
+
+                    <Label Text="WidthProportional 0, 200, .3, 100"                          
+                           Style="{StaticResource LbStyle}"/>
+
+                </Grid>
+
+                <Grid BackgroundColor="#23282d"  
+                      AbsoluteLayout.LayoutBounds="110, 350, 100, .3"                
+                      AbsoluteLayout.LayoutFlags="HeightProportional">
+
+                    <Label Text="HeightProportional 110, 350, 100, .3"                          
+                           Style="{StaticResource LbStyle}"/>
+
+                </Grid>
+
+            </AbsoluteLayout>
+
+        </StackLayout>
+
+    </ContentPage.Content>
+
+</ContentPage>

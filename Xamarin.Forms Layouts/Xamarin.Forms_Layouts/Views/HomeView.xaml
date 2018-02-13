@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Xamarin.Forms_Layouts.Views.HomeView"   
+             Title="Home"
+             ControlTemplate="{StaticResource SweetTemplate}">
+
+    <ContentPage.Content>
+
+        <StackLayout Spacing="1"
+                     Orientation="Vertical"                         
+                     VerticalOptions="CenterAndExpand">
+
+            <Button x:Name="btnGrid"
+                        Text="Grid"                        
+                        Style="{StaticResource BtnGrayStyle}"/>
+
+            <Button x:Name="btnScrollView"
+                        Text="ScrollView"                        
+                        Style="{StaticResource BtnPinkStyle}"/>
+
+            <Button x:Name="btnStackLayout"
+                        Text="StackLayout"
+                        Style="{StaticResource BtnGrayStyle}"/>
+
+            <Button x:Name="btnRelativeLayout"  
+                        Text="RelativeLayout"
+                        Style="{StaticResource BtnPinkStyle}"/>
+
+            <Button x:Name="btnAbsoluteLayout" 
+                        Text="AbsoluteLayout"
+                        Style="{StaticResource BtnGrayStyle}"/>
+
+        </StackLayout>
+
+    </ContentPage.Content>
+    
+</ContentPage>

@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Xamarin.Forms_Layouts.Views.ScrollView" 
+             Title="ScrollView"
+             ControlTemplate="{StaticResource SweetTemplate}">
+
+    <ContentPage.Content>
+
+        <StackLayout>
+
+            <ScrollView>
+
+                <StackLayout>
+
+                    <BoxView HeightRequest="100"
+                         HorizontalOptions="FillAndExpand"
+                         BackgroundColor="#23282d">
+                    </BoxView>
+
+                    <BoxView HeightRequest="100"
+                         HorizontalOptions="FillAndExpand"
+                         BackgroundColor="#7E1335">
+                    </BoxView>
+
+                    <BoxView HeightRequest="100"
+                         HorizontalOptions="FillAndExpand"
+                         BackgroundColor="#23282d">
+                    </BoxView>
+
+                    <BoxView HeightRequest="100"
+                         HorizontalOptions="FillAndExpand"
+                         BackgroundColor="#7E1335">
+                    </BoxView>
+
+                    <BoxView HeightRequest="100"
+                         HorizontalOptions="FillAndExpand"
+                         BackgroundColor="#23282d">
+                    </BoxView>
+
+                    <BoxView HeightRequest="100"
+                         HorizontalOptions="FillAndExpand"
+                         BackgroundColor="#7E1335">
+                    </BoxView>
+
+                    <BoxView HeightRequest="100"
+                         HorizontalOptions="FillAndExpand"
+                         BackgroundColor="#23282d">
+                    </BoxView>
+
+                    <BoxView HeightRequest="100"
+                         HorizontalOptions="FillAndExpand"
+                         BackgroundColor="#7E1335">
+                    </BoxView>
+
+                    <BoxView HeightRequest="100"
+                         HorizontalOptions="FillAndExpand"
+                         BackgroundColor="#23282d">
+                    </BoxView>
+
+                    <BoxView HeightRequest="100"
+                         HorizontalOptions="FillAndExpand"
+                         BackgroundColor="#7E1335">
+                    </BoxView>
+
+                    <BoxView HeightRequest="100"
+                         HorizontalOptions="FillAndExpand"
+                         BackgroundColor="#23282d">
+                    </BoxView>
+
+                </StackLayout>
+
+            </ScrollView>
+
+        </StackLayout>
+
+    </ContentPage.Content>
+    
+</ContentPage>

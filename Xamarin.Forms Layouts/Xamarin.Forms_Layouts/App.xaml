@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Application xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Xamarin.Forms_Layouts.App"
+             xmlns:ex="clr-namespace:Xamarin.Forms_Layouts.Extensions">
+    
+	<Application.Resources>
+
+		<!-- Application resource dictionary -->
+        <ResourceDictionary>
+
+            <Style x:Key="LbWhiteStyle" TargetType="Label">
+                <Setter Property="FontSize" Value="17" />
+                <Setter Property="TextColor" Value="#FFFFFF" />
+            </Style>
+
+            <Style x:Key="LbGrayStyle" TargetType="Label">
+                <Setter Property="FontSize" Value="Small"/>
+                <Setter Property="Margin" Value="0,7,0,7"/>
+                <Setter Property="TextColor" Value="#23282d"/>
+                <Setter Property="HorizontalOptions" Value="Center"/>
+            </Style>
+
+            <Style x:Key="LbStyle" TargetType="Label">
+                <Setter Property="TextColor" Value="White"/>
+                <Setter Property="VerticalTextAlignment" Value="Center"/>
+                <Setter Property="HorizontalTextAlignment" Value="Center"/>
+            </Style>
+
+            <Style x:Key="BtnGrayStyle" TargetType="Button">
+                <Setter Property="BackgroundColor" Value="#23282d"/>
+                <Setter Property="HeightRequest" Value="50"/>
+                <Setter Property="TextColor" Value="#FFFFFF"/>
+            </Style>
+
+            <Style x:Key="BtnPinkStyle" TargetType="Button">
+                <Setter Property="BackgroundColor" Value="#7E1335"/>
+                <Setter Property="HeightRequest" Value="50"/>
+                <Setter Property="TextColor" Value="#FFFFFF"/>
+            </Style>
+
+            <ControlTemplate x:Key="SweetTemplate">
+
+                <StackLayout VerticalOptions="FillAndExpand">
+
+                    <StackLayout x:Name="stlHeader" 
+                                HeightRequest="90"
+                                BackgroundColor="#23282d"
+                                Orientation="Horizontal">
+
+                        <Image x:Name="imgLogo"                    
+                               Source="{ex:ImageResource ic_xf_layouts.png}"/>
+
+                        <StackLayout x:Name="stlDetails" 
+                                     VerticalOptions="Center">
+
+                            <Label x:Name="lbTitle"
+                                   Style="{StaticResource LbWhiteStyle}"
+                                   Text="Xamarin.Forms Layouts"/>
+
+                            <Label x:Name="lbDescription"
+                                   Font="Bold"
+                                   Style="{StaticResource LbWhiteStyle}"
+                                   Text="Different types of Layouts in Xamarin.Forms"/>
+
+                        </StackLayout>
+
+                    </StackLayout>
+
+                    <ContentPresenter VerticalOptions="FillAndExpand"/>
+
+                    <Label Text="Copyright © Mohamed Ali NOUIRA. All rights reserved."
+                           VerticalOptions="EndAndExpand"
+                           Style="{StaticResource LbGrayStyle}"/>
+
+                </StackLayout>
+
+            </ControlTemplate>
+
+        </ResourceDictionary>
+        
+    </Application.Resources>
+    
+</Application>
